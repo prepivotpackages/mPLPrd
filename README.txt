@@ -10,3 +10,17 @@ This method estimates the ATE via local polynomial estimation at both sides of t
 and bias corrects by means of a local polynomial bootstrap. By prepivoting this bootstrap
 DGP, robust bias correct standard errors are obtained.
 
+########## Usage ###########
+
+mPLPrd <- function(y, x, h, c = NULL, p = NULL, kersel = NULL, 
+                  res = NULL, alpha = NULL, fast = NULL, g.loo = NULL) 
+
+
+########## Arguments ###########
+
+
+y            dependent variable 
+x            running variable (or forcing variable, or score)
+h            bandwidth parameter 
+
+
